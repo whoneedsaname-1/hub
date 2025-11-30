@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>המשחקים שלי</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+
+    <main class="container">
+        <header>
+            <div class="user-section">
+                <div id="userInfo" class="hidden">
+                    <span>שלום, <strong id="userNameDisplay"></strong></span>
+                    <button id="logoutBtn" class="btn-small">התנתק</button>
+                </div>
+                <button id="loginBtn" class="btn-primary">התחברות / הרשמה</button>
+            </div>
+            <h1>המשחקים שלי</h1>
+            <p>ברוכים הבאים ללובי המשחקים! בחרו משחק והתחילו להנות</p>
+        </header>
+
+        <div class="games-grid">
+            <!-- Game 1: Fun Math -->
+            <a href="https://whoneedsaname-1.github.io/fun_math" class="game-card math-card" target="_blank">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h2>ללמוד חשבון בכיף</h2>
+                    <p>תרגול חשבון מהנה לכל הכיתות עם משחקים ואתגרים</p>
+                    <span class="play-btn">שחקו עכשיו <i class="fa-solid fa-arrow-left"></i></span>
+                </div>
+                <div class="card-bg"></div>
+            </a>
+
+            <!-- Game 2: Basketball -->
+            <a href="https://whoneedsaname-1.github.io/baskethoop" class="game-card basket-card" target="_blank">
+                <div class="card-content">
+                    <div class="icon-wrapper">
+                        <i class="fa-solid fa-basketball"></i>
+                    </div>
+                    <h2>משחק כדורסל</h2>
+                    <p>קליעות לסל, אתגרים ותחרויות במשחק כדורסל ממכר</p>
+                    <span class="play-btn">שחקו עכשיו <i class="fa-solid fa-arrow-left"></i></span>
+                </div>
+                <div class="card-bg"></div>
+            </a>
+        </div>
+    </main>
+
+    <!-- Auth Modal -->
+    <div id="authModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+
+            <!-- Login Form -->
+            <form id="loginForm" class="auth-form">
+                <h2>התחברות</h2>
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="loginUser" placeholder="שם משתמש" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="loginPass" placeholder="סיסמה" required>
+                </div>
+                <button type="submit" class="btn-submit">התחבר</button>
+                <p class="switch-text">אין לך חשבון? <a href="#" id="showRegister">הרשם כאן</a></p>
+            </form>
+
+            <!-- Register Form -->
+            <form id="registerForm" class="auth-form hidden">
+                <h2>הרשמה</h2>
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="regUser" placeholder="בחר שם משתמש" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="regPass" placeholder="בחר סיסמה" required>
+                </div>
+                <button type="submit" class="btn-submit">הרשם</button>
+                <p class="switch-text">יש לך חשבון? <a href="#" id="showLogin">התחבר כאן</a></p>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 כל הזכויות שמורות</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
