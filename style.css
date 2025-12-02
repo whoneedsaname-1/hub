@@ -220,19 +220,6 @@ header p {
     transition: transform 0.4s ease;
 }
 
-.math-card .icon-wrapper {
-    color: #4ade80;
-    background: rgba(74, 222, 128, 0.15);
-}
-
-.basket-card .icon-wrapper {
-    color: #fb923c;
-    background: rgba(251, 146, 60, 0.15);
-}
-
-.game-card:hover .icon-wrapper {
-    transform: scale(1.1) rotate(5deg);
-}
 
 .game-card h2 {
     font-size: 1.8rem;
