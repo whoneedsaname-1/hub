@@ -16,13 +16,7 @@
 
     <main class="container">
         <header>
-            <div class="user-section">
-                <div id="userInfo" class="hidden">
-                    <span>שלום, <strong id="userNameDisplay"></strong></span>
-                    <button id="logoutBtn" class="btn-small">התנתק</button>
-                </div>
-                <button id="loginBtn" class="btn-primary">התחברות / הרשמה</button>
-            </div>
+
             <h1>המשחקים שלי</h1>
             <p>ברוכים הבאים ללובי המשחקים! בחרו משחק והתחילו להנות</p>
         </header>
@@ -95,42 +89,7 @@
         </div>
     </main>
 
-    <!-- Auth Modal -->
-    <div id="authModal" class="modal hidden">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
 
-            <!-- Login Form -->
-            <form id="loginForm" class="auth-form">
-                <h2>התחברות</h2>
-                <div class="input-group">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" id="loginUser" placeholder="שם משתמש" required>
-                </div>
-                <div class="input-group">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" id="loginPass" placeholder="סיסמה" required>
-                </div>
-                <button type="submit" class="btn-submit">התחבר</button>
-                <p class="switch-text">אין לך חשבון? <a href="#" id="showRegister">הרשם כאן</a></p>
-            </form>
-
-            <!-- Register Form -->
-            <form id="registerForm" class="auth-form hidden">
-                <h2>הרשמה</h2>
-                <div class="input-group">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" id="regUser" placeholder="בחר שם משתמש" required>
-                </div>
-                <div class="input-group">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" id="regPass" placeholder="בחר סיסמה" required>
-                </div>
-                <button type="submit" class="btn-submit">הרשם</button>
-                <p class="switch-text">יש לך חשבון? <a href="#" id="showLogin">התחבר כאן</a></p>
-            </form>
-        </div>
-    </div>
 
     <footer>
         <p>© 2025 כל הזכויות שמורות</p>
